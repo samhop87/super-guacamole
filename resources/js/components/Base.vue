@@ -6,20 +6,24 @@
                 <p>A decision making game</p>
             </div>
         </div>
-
-<!--        Vue Router used to enable info screens later.-->
+        <div class="h-1/6 p-2">
+            <progress-bars></progress-bars>
+        </div>
+        <!-- Vue Router used to enable info screens later.-->
         <router-view></router-view>
     </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
+    import ProgressBars from "./game-components/Details";
 
-            }
+    export default {
+        components: {
+            ProgressBars
         },
-        methods: {
-        }
+        data() {
+            return {}
+        },
+        methods: {}
     }
 </script>

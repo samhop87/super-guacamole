@@ -1,15 +1,15 @@
 <template>
-    <div>
-        <progress-bars></progress-bars>
+    <div class="h-4/6 flex flex-col justify-between">
+        <event-area></event-area>
     </div>
 </template>
 
 <script>
-    import ProgressBars from "./game-components/Details";
+    import EventArea from "./game-components/EventArea";
 
     export default {
         components: {
-            ProgressBars
+            EventArea
         },
         props: {},
         data() {
