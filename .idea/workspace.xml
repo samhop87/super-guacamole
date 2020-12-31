@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_211215_create_events_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/partials/Event.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Models/Choice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/GamePlatform.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/GamePlatform.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +177,8 @@
       <workItem from="1609190034083" duration="3216000" />
       <workItem from="1609193899010" duration="110000" />
       <workItem from="1609252051016" duration="4207000" />
-      <workItem from="1609273146392" duration="4473000" />
+      <workItem from="1609273146392" duration="4646000" />
+      <workItem from="1609422172386" duration="4163000" />
     </task>
     <servers />
   </component>
@@ -184,6 +186,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1609423488929">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609423488929" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1609253672874">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

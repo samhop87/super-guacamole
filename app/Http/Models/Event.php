@@ -20,7 +20,7 @@ class Event extends Model
     CONST POLITICAL_BIG     = "big politics";
     CONST CIVIL_UNREST      = "civil unrest";
 
-    public function outcomes() {
-        return $this->hasMany(Outcome::class);
+    public function choices() {
+        return $this->hasMany(Choice::class);
     }
 }

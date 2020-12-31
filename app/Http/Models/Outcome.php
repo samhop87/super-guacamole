@@ -12,4 +12,11 @@ class Outcome extends Model
      * @var string
      */
     protected $table = 'outcomes';
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function choice() {
+        return $this->belongsTo(Choice::class);
+    }
 }
