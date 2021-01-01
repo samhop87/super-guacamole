@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Models/Choice.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +175,8 @@
       <workItem from="1609193899010" duration="110000" />
       <workItem from="1609252051016" duration="4207000" />
       <workItem from="1609273146392" duration="4646000" />
-      <workItem from="1609422172386" duration="4163000" />
+      <workItem from="1609422172386" duration="4376000" />
+      <workItem from="1609511018448" duration="8923000" />
     </task>
     <servers />
   </component>
@@ -194,5 +192,13 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609253672874" />
+    <state x="334" y="72" width="612" height="536" key="find.popup" timestamp="1609533423008">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1609533423008" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609513041795">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609513041795" />
   </component>
 </project>

@@ -3,21 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
-use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function getEvents()
     {
-        $event = request()->get('id');
-        // Determine which event to return
-        Event::where('id', $event->id)->with('outcomes')->first();
-        // Pass in the data from the component -> stability & popularity for now, and number of months in charge.
-        // Calculate event type?
-        // Calculate which event of event type
+        $eventTypes = [
+            Event::NATURAL_DISASTER,
+            Event::CIVIL_UNREST,
+            Event::PERSONAL_SCANDAL,
+            Event::POLITICAL_BIG,
+            Event::POLITICAL_SMALL,
+            Event::POLITICAL_SCANDAL
+        ];
 
-
-        // Create a resource of the event, along with the choices (and outcomes?)
-        return new EventResource($event);
+        return $eventTypes;
     }
 }

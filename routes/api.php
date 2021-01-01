@@ -18,5 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/event', 'ApiEventController@index')->name('event');
+Route::post('/event', 'Api\ApiEventController@store')->name('event');
 Route::get('/event-types', 'AdminController@getEvents');

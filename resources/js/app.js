@@ -33,12 +33,12 @@ Vue.use(VueRouter)
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('game-base', require('./components/Base.vue').default);
+Vue.component('game-base', require('./components/Base.vue').default)
+Vue.component('events-manager', require('./components/admin-components/Create').default)
 Vue.component('multiselect', Multiselect)
 
 const routes = [
     { path: '/', component: GamePlatform },
-    { path: '/create-event', component: CreateEvent }
 ]
 
 const router = new VueRouter({
