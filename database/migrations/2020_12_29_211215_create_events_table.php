@@ -19,7 +19,7 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
-            $table->integer('type');
+            $table->string('type', 50);
             $table->string('detail', 255);
             $table->timestamps();
         });

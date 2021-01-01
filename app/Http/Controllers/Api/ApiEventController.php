@@ -25,7 +25,7 @@ class ApiEventController extends Controller
 
     public function store()
     {
-        $event = request()->toArray();
+        $event = request();
 
         $newEvent = Event::firstOrCreate([
             'name' => $event->name,
@@ -40,14 +40,14 @@ class ApiEventController extends Controller
             ], [
                 'event_id' => $newEvent->id,
                 'choice_type' => $key,
-                'details' => $decision->choice
+                'details' => $decision['choice']
             ]);
 
             Outcome::firstOrCreate([
                 'event_choice_id' => $choice->id,
-                'stability_effect' => $decision->outcome->stability_effect,
-                'popularity_effect' => $decision->outcome->popularity_effect,
-                'info' => $decision->outcome->text
+                'stability_effect' => $decision['outcome']['stability_effect'],
+                'popularity_effect' => $decision['outcome']['popularity_effect'],
+                'info' => $decision['outcome']['text']
             ]);
         }
 

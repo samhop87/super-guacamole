@@ -14,6 +14,15 @@ class Choice extends Model
     protected $table = 'event_choices';
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'event_id', 'choice_type', 'details',
+    ];
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function event() {

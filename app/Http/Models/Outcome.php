@@ -14,6 +14,15 @@ class Outcome extends Model
     protected $table = 'outcomes';
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'event_choice_id', 'stability_effect', 'popularity_effect', 'info'
+    ];
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function choice() {

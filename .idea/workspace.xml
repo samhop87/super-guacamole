@@ -3,16 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Choice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Choice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_211215_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_211215_create_events_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_134617_create_event_choices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_134617_create_event_choices_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +172,7 @@
       <workItem from="1609252051016" duration="4207000" />
       <workItem from="1609273146392" duration="4646000" />
       <workItem from="1609422172386" duration="4376000" />
-      <workItem from="1609511018448" duration="8923000" />
+      <workItem from="1609511018448" duration="10852000" />
     </task>
     <servers />
   </component>

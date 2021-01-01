@@ -13,6 +13,15 @@ class Event extends Model
      */
     protected $table = 'events';
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'type', 'detail',
+    ];
+
     CONST NATURAL_DISASTER  = "disaster";
     CONST POLITICAL_SMALL   = "small politics";
     CONST POLITICAL_SCANDAL = "scandal";

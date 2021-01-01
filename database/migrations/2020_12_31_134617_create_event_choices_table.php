@@ -16,7 +16,7 @@ class CreateEventChoicesTable extends Migration
         Schema::create('event_choices', function (Blueprint $table) {
             $table->id();
             $table->integer('event_id');
-            $table->integer('choice_type');
+            $table->string('choice_type', 20);
             $table->string('details');
             $table->timestamps();
         });
