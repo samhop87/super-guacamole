@@ -1,6 +1,20 @@
 <template>
-    <div class="h-1/3 w-full container border-8" :class="borderColour">
-        <event :event="event" @triggerEvent="nextEvent"></event>
+    <div>
+        <div class="w-full container border-8" :class="borderColour">
+            <event :event="event" @triggerEvent="nextEvent"></event>
+        </div>
+        <div class="md:flex md:justify-around" v-if="event">
+            <div class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/4 my-2 p-3 border-4 rounded border-gray-400"
+                 v-for="choice in event.choices"
+                 :key="choice.key"
+                 @click="makeChoice"
+            >
+                {{ choice.details }}
+            </div>
+        </div>
+        <div v-else>
+            Event loading...
+        </div>
     </div>
 </template>
 
@@ -9,13 +23,13 @@
 
     export default {
         components: {
-          Event
+            Event
         },
         props: {},
         data() {
-          return {
-              event: null,
-          }
+            return {
+                event: null,
+            }
         },
         computed: {
             borderColour() {
@@ -30,18 +44,26 @@
             // This will not be in mounted later
             // The eventarea component manages the flow of the game, makes the api calls.
             // It provides the details to the event component, which is just a vehicle to show the data.
-          this.nextEvent()
+            this.nextEvent()
         },
         methods: {
-          nextEvent() {
-              axios.get('api/next-event').then(({data}) => {
-                  this.event = data.data
-              }).then(() => {
-                  console.log('then')
-              }).catch(({response}) => {
-                  console.log(response)
-              })
-          }
+            nextEvent() {
+                axios.get('api/next-event').then(({data}) => {
+                    this.event = data.data
+                }).then(() => {
+                    console.log('then')
+                }).catch(({response}) => {
+                    console.log(response)
+                })
+            },
+            makeChoice() {
+                // Here we trigger a loading wheel/hourglass of some kind.
+                // We then show the outcome of the choice & apply pop/stab effects to count.
+                // TODO: Make a new outcome component.
+                // The outcome has a button - 'continue'.
+                // Clicking the button fires the next event method and retrieves a new event.
+                alert('fired choice')
+            }
         },
     }
 </script>

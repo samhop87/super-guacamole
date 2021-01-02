@@ -14,8 +14,8 @@
         },
         computed: {
             eventDetail() {
-                return this.event ? this.event : 'Waiting on next event...'
-            }
+                return this.event ? this.event.detail : 'Waiting on next event...'
+            },
         }
     }
 </script>
