@@ -18,5 +18,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/event', 'Api\ApiEventController@store')->name('event');
+// Frontend routes
+Route::get('/next-event', 'Api\ApiEventController@index');
+
+// Admin Routes
+Route::post('/store-event', 'Api\ApiEventController@store')->name('event');
 Route::get('/event-types', 'AdminController@getEvents');

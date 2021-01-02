@@ -5,10 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Models/Choice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Choice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_211215_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_211215_create_events_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_134617_create_event_choices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_134617_create_event_choices_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/OutcomeResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/OutcomeResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Event.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/partials/Event.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +177,8 @@
       <workItem from="1609273146392" duration="4646000" />
       <workItem from="1609422172386" duration="4376000" />
       <workItem from="1609511018448" duration="10852000" />
+      <workItem from="1609581253796" duration="2092000" />
+      <workItem from="1609618159106" duration="592000" />
     </task>
     <servers />
   </component>
@@ -192,6 +198,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1609533423008" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1609583044612">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609583044612" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609513041795">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -30,9 +30,9 @@ class Choice extends Model
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function outcomes() {
-        return $this->hasMany(Outcome::class);
+    public function outcome() {
+        return $this->hasOne(Outcome::class, 'event_choice_id', 'id');
     }
 }

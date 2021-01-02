@@ -1,11 +1,21 @@
 <template>
     <div>
-        The event contains text and choices?
+        <p>{{ eventDetail }}</p>
     </div>
 </template>
 
 <script>
     export default {
-
+        props: {
+            event: {
+                type: Object,
+                default: null
+            }
+        },
+        computed: {
+            eventDetail() {
+                return this.event ? this.event : 'Waiting on next event...'
+            }
+        }
     }
 </script>

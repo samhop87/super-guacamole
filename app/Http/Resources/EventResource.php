@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -19,6 +19,12 @@ class EventResource extends JsonResource
         return [
             'id'       => $this->id,
             'name'     => $this->name,
+            'type'     => $this->type,
+            'detail'   => $this->detail,
+            'choices'  => $this->resource->choices,
+            'outcomes' => $this->resource->choices->map(function ($choice) {
+                return new OutcomeResource($choice->outcome);
+            })
         ];
     }
 }

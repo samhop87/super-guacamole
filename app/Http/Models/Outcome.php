@@ -26,6 +26,6 @@ class Outcome extends Model
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function choice() {
-        return $this->belongsTo(Choice::class);
+        return $this->belongsTo(Choice::class, 'event_choice_id');
     }
 }
