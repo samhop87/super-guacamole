@@ -139,7 +139,7 @@
                 })
             },
             submit() {
-                axios.post('/api/event', this.event_details).then(({data}) => {
+                axios.post('/api/store-event', this.event_details).then(({data}) => {
                     this.postResponse = data.message
                 }).catch(({ response }) => {
                     console.log(response)

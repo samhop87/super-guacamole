@@ -1,33 +1,44 @@
 <template>
     <div>
-        <div class="w-full container border-8" :class="borderColour">
-            <event :event="event" @triggerEvent="nextEvent"></event>
+        <div v-if="loading.decision">
+            <spinner :colour="borderColour"></spinner>
         </div>
-        <div class="md:flex md:justify-around" v-if="event">
-            <div class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/4 my-2 p-3 border-4 rounded border-gray-400"
-                 v-for="choice in event.choices"
-                 :key="choice.key"
-                 @click="makeChoice"
-            >
-                {{ choice.details }}
+        <div v-else-if="!loading.decision">
+            <div class="w-full container border-8" :class="borderColour">
+                <event :event="event" @triggerEvent="nextEvent"></event>
             </div>
-        </div>
-        <div v-else>
-            Event loading...
+            <div class="md:flex md:justify-around" v-if="event">
+                <div
+                    class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/4 my-2 p-3 border-4 rounded border-gray-400"
+                    v-for="choice in event.choices"
+                    :key="choice.key"
+                    @click="makeChoice"
+                >
+                    {{ choice.details }}
+                </div>
+            </div>
+            <div v-else>
+                <spinner></spinner>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
     import Event from "../partials/Event.vue"
+    import Spinner from "../partials/Spinner"
 
     export default {
         components: {
-            Event
+            Event,
+            Spinner
         },
         props: {},
         data() {
             return {
+                loading: {
+                    decision: false
+                },
                 event: null,
             }
         },
@@ -63,6 +74,7 @@
                 // The outcome has a button - 'continue'.
                 // Clicking the button fires the next event method and retrieves a new event.
                 alert('fired choice')
+                this.loading.decision = true
             }
         },
     }
