@@ -11,8 +11,8 @@
                 <div
                     class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/4 my-2 p-3 border-4 rounded border-gray-400"
                     v-for="choice in event.choices"
-                    :key="choice.key"
-                    @click="makeChoice"
+                    :key="choice.id"
+                    @click="makeChoice(choice.outcome)"
                 >
                     {{ choice.details }}
                 </div>
@@ -59,7 +59,7 @@
         },
         methods: {
             nextEvent() {
-                axios.get('api/next-event').then(({data}) => {
+                axios.get('api/next-event?stats=' + this.stability).then(({data}) => {
                     this.event = data.data
                 }).then(() => {
                     console.log('then')
@@ -67,7 +67,7 @@
                     console.log(response)
                 })
             },
-            makeChoice() {
+            makeChoice(outcome) {
                 // Here we trigger a loading wheel/hourglass of some kind.
                 // We then show the outcome of the choice & apply pop/stab effects to count.
                 // TODO: Make a new outcome component.
@@ -75,6 +75,9 @@
                 // Clicking the button fires the next event method and retrieves a new event.
                 alert('fired choice')
                 this.loading.decision = true
+                this.$emit('apply-outcome', outcome)
+                this.loading.decision = false
+                // Ask for next event?
             }
         },
     }

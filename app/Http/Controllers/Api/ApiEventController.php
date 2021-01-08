@@ -18,6 +18,8 @@ class ApiEventController extends Controller
         // Calculate which event of event type
         $params = request();
 
+        mt_rand();
+
         $event = Event::find(1);
         // Create a resource of the event, along with the choices (and outcomes?)
         return new EventResource($event);
