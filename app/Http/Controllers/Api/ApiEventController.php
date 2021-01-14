@@ -12,15 +12,48 @@ use Illuminate\Support\Facades\DB;
 class ApiEventController extends Controller
 {
     public function index() {
-        // Determine which event to return
-        // Pass in the data from the component -> stability & popularity for now, and number of months in charge.
-        // Calculate event type?
-        // Calculate which event of event type
-        $params = request();
+        $stability  = request('stability');
+        $popularity = request('popularity');
+        $pastEvents = json_decode(request('pastEvents'));
 
-        mt_rand();
+        $severity = 1;
 
-        $event = Event::find(1);
+        // TODO: There's got to be a better way of doing this, too.
+        switch ($stability) {
+            case $stability < 20:
+                $severity = 5;
+                break;
+            case $stability > 20 && $stability < 40:
+                $severity = 4;
+                break;
+            case $stability > 40 && $stability < 60:
+                $severity = 3;
+                break;
+            case $stability > 60 && $stability < 80:
+                $severity = 2;
+                break;
+            case $stability > 80:
+                $severity = 1;
+                break;
+            default:
+                $severity = 1;
+        }
+
+        // TODO: FIX THIS - currently if no event returned, it breaks.
+        // It should find the next event
+        if (!empty($pastEvents)) {
+            $event = Event::where('severity', $severity)
+                ->whereNotIn('id', $pastEvents)
+                ->first();
+        } else {
+            $event = Event::find(1);
+        }
+
+        // TODO: PLACEHOLDER!
+        if (!$event) {
+            $event = Event::find(1);
+        }
+
         // Create a resource of the event, along with the choices (and outcomes?)
         return new EventResource($event);
     }
@@ -34,7 +67,8 @@ class ApiEventController extends Controller
             $newEvent = Event::firstOrCreate([
                 'name' => $event->name,
                 'type' => $event->type,
-                'detail' => $event->detail
+                'detail' => $event->detail,
+                'severity' => $event->severity
             ]);
 
             foreach ($event->decision as $key => $decision) {

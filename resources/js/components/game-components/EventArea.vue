@@ -5,7 +5,14 @@
         </div>
         <div v-else-if="!loading.decision">
             <div class="w-full container border-8" :class="borderColour">
+                <div class="flex flex-row justify-between items-center">
+                <div class="w-1/4">
+                    <img class="w-full" src="/images/assistant.jpg">
+                </div>
+                    <div class="w-3/4 ml-4">
                 <event :event="event" @triggerEvent="nextEvent"></event>
+                    </div>
+                </div>
             </div>
             <div class="md:flex md:justify-around" v-if="event">
                 <div
@@ -33,7 +40,12 @@
             Event,
             Spinner
         },
-        props: {},
+        props: {
+            game: {
+                type: Object,
+                required: true
+            }
+        },
         data() {
             return {
                 loading: {
@@ -59,10 +71,16 @@
         },
         methods: {
             nextEvent() {
-                axios.get('api/next-event?stats=' + this.stability).then(({data}) => {
+                console.log(this.pastEvents)
+                axios.get('api/next-event',
+                    { params: {
+                        stability: this.game.stability.score,
+                        popularity: this.game.popularity.score,
+                        pastEvents: JSON.stringify(this.game.pastEvents)
+                    }}).then(({data}) => {
                     this.event = data.data
                 }).then(() => {
-                    console.log('then')
+                    this.$emit('remember-event', this.event.id)
                 }).catch(({response}) => {
                     console.log(response)
                 })

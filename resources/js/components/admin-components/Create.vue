@@ -3,6 +3,11 @@
         <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
             <input class="w-full" type="text" placeholder="event name" v-model="event_details.name">
         </div>
+
+        <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
+            <input class="w-full" type="number" placeholder="severity" min="1" max="5" v-model="event_details.severity">
+        </div>
+
         <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
             <multiselect v-model="event_details.type"
                          :options="event_types"
@@ -94,6 +99,7 @@
                     name: null,
                     type: null,
                     detail: null,
+                    severity: 0,
                     decision: {
                         positive: {
                             choice: null,

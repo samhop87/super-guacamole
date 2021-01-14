@@ -20,6 +20,7 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('name', 50);
             $table->string('type', 50);
+            $table->tinyInteger('severity');
             $table->string('detail', 255);
             $table->timestamps();
         });

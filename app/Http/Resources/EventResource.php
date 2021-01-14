@@ -21,6 +21,7 @@ class EventResource extends JsonResource
             'name'     => $this->name,
             'type'     => $this->type,
             'detail'   => $this->detail,
+            'severity' => $this->severity,
             'choices'  => $this->resource->choices,
             'outcomes' => $this->resource->choices->map(function ($choice) {
                 return new OutcomeResource($choice->outcome);

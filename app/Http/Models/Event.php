@@ -19,7 +19,7 @@ class Event extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'type', 'detail',
+        'name', 'type', 'detail', 'severity'
     ];
 
     CONST NATURAL_DISASTER  = "disaster";

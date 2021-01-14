@@ -6,6 +6,7 @@
         <div class="h-4/6 flex flex-col justify-between">
             <event-area v-if="!show_outcome"
                         @apply-outcome="presentOutcome"
+                        @remember-event="rememberEvent"
                         :game="game"
             />
             <outcome v-else-if="show_outcome"
@@ -34,6 +35,7 @@
                 outcome: null,
                 show_outcome: false,
                 game: {
+                    pastEvents: [],
                     popularity: {
                         score: 50,
                         difference: 0
@@ -61,6 +63,9 @@
                     this.game.stability.score  += outcome.stability_effect
                 }
                 this.show_outcome = !this.show_outcome
+            },
+            rememberEvent(id) {
+                this.game.pastEvents.push(id)
             }
         }
     }
