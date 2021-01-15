@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="h-1/6 p-2">
-            <progress-bars :stability="game.stability.score" :popularity="game.popularity.score"/>
+        <div class="w-full my-4 border-4">
+            <info-bar :game="game"></info-bar>
         </div>
         <div class="h-4/6 flex flex-col justify-between">
             <event-area v-if="!show_outcome"
@@ -21,13 +21,13 @@
 <script>
     import EventArea from "./game-components/EventArea"
     import Outcome from './partials/Outcome'
-    import ProgressBars from "./game-components/Details";
+    import InfoBar from "./game-components/InfoBar";
 
     export default {
         components: {
             EventArea,
-            Outcome,
-            ProgressBars
+            InfoBar,
+            Outcome
         },
         props: {},
         data() {
@@ -35,6 +35,7 @@
                 outcome: null,
                 show_outcome: false,
                 game: {
+                    month: 'January',
                     pastEvents: [],
                     popularity: {
                         score: 50,
@@ -61,6 +62,15 @@
 
                     this.game.popularity.score += outcome.popularity_effect
                     this.game.stability.score  += outcome.stability_effect
+
+                    if (this.game.popularity.score < 0) {
+                        this.game.popularity.score = 0
+                    }
+
+                    if (this.game.stability.score < 0) {
+                        this.game.stability.score = 0
+                    }
+
                 }
                 this.show_outcome = !this.show_outcome
             },

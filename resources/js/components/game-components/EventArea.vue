@@ -86,16 +86,9 @@
                 })
             },
             makeChoice(outcome) {
-                // Here we trigger a loading wheel/hourglass of some kind.
-                // We then show the outcome of the choice & apply pop/stab effects to count.
-                // TODO: Make a new outcome component.
-                // The outcome has a button - 'continue'.
-                // Clicking the button fires the next event method and retrieves a new event.
-                alert('fired choice')
                 this.loading.decision = true
                 this.$emit('apply-outcome', outcome)
                 this.loading.decision = false
-                // Ask for next event?
             }
         },
     }

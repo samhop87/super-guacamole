@@ -1,10 +1,18 @@
 <template>
-    <div>
-        {{ outcome.info }}
+    <div class="w-full container border-8">
+        <div class="text-lg p-2">
+            {{ outcome.info }}
+        </div>
 
-        {{ stabilityMessage }}
-        {{ popularityMessage }}
-        <button type="button" @click="proceed">This is the button to proceed</button>
+        <div class="font-bold p-2">
+            {{ stabilityMessage }}
+        </div>
+
+        <div class="font-bold p-2">
+            {{ popularityMessage }}
+        </div>
+
+        <button class="font-bold p-2 my-4 border-8 bg-blue-400 hover:text-white" type="button" @click="proceed">This is the button to proceed</button>
     </div>
 </template>
 

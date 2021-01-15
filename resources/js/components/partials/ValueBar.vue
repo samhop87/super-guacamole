@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-progress :value="value" :max="100" variant="success" show-value animated></b-progress>
+        <b-progress :value="value" :max="100" :variant="colour" show-value animated></b-progress>
     </div>
 </template>
 
@@ -11,6 +11,10 @@
           value: {
               type: Number,
               default: 50
+          },
+          colour: {
+              type: String,
+              default: 'dark'
           }
         }
     }
