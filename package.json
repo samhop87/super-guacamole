@@ -1,9 +1,6 @@
 {
     "private": true,
-    "engines": {
-        "version": "6.14.4",
-        "node": "12.16.3"
-    },
+    "version": "6.14.4",
     "scripts": {
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -13,6 +10,9 @@
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js",
         "postinstall": "npm run prod"
+    },
+    "engines": {
+        "node": "12.16.3"
     },
     "devDependencies": {
         "@tailwindcss/postcss7-compat": "^2.0.2",
