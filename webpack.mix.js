@@ -20,3 +20,7 @@ mix.sass('resources/sass/app.scss', 'public/css')
         processCssUrls: false,
         postCss: [ tailwindcss('tailwind.config.js') ],
     })
+
+mix.browserSync({
+    proxy: 'localhos:8000'
+})
