@@ -8,6 +8,8 @@
         "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "postinstall": "npm run production",
+        "heroku-prebuild": "npm install -f",
         "heroku-postbuild": "npm run production",
         "start": "npm run prod"
     },
@@ -16,6 +18,9 @@
         "npm": "6.14.4"
     },
     "devDependencies": {
+
+    },
+    "dependencies": {
         "@tailwindcss/postcss7-compat": "^2.0.2",
         "autoprefixer": "^9.8.6",
         "bootstrap": "^4.0.0",
@@ -29,9 +34,7 @@
         "postcss": "^7.0.35",
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.20.1",
-        "sass-loader": "^8.0.0"
-    },
-    "dependencies": {
+        "sass-loader": "^8.0.0",
         "bootstrap-vue": "^2.21.1",
         "vue-multiselect": "^2.1.6",
         "vue-router": "^3.4.9",
