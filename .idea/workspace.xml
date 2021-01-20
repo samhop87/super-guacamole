@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +191,7 @@
       <workItem from="1610959968021" duration="54000" />
       <workItem from="1611155065650" duration="69000" />
       <workItem from="1611158512058" duration="227000" />
-      <workItem from="1611158964126" duration="616000" />
+      <workItem from="1611158964126" duration="6451000" />
     </task>
     <servers />
   </component>
@@ -216,6 +217,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609253672874" />
+    <state x="2626" y="334" key="NewPhpClassDialog" timestamp="1611171447454">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2626" y="334" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611171447454" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611172204515">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611172204515" />
     <state x="2421" y="110" width="918" height="820" key="find.popup" timestamp="1610099336764">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -225,9 +234,9 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609583044612" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611159110650">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611174408829">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611159110650" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611174408829" />
   </component>
 </project>

@@ -51,7 +51,7 @@ class ApiEventController extends Controller
 
         // TODO: PLACEHOLDER!
         if (!$event) {
-            $event = Event::find(1);
+            $event = Event::find(2);
         }
 
         // Create a resource of the event, along with the choices (and outcomes?)
