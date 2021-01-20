@@ -24,7 +24,7 @@ Auth::routes();
 Route::get('/admin', 'HomeController@index')->name('admin');
 
 Route::get('/{vue_capture?}', function () {
-    return view('layouts.master');
+    return view('base');
 })->where('vue_capture', '[\/\w\.-]*');
 
 Route::get('/clear-cache', function() {
