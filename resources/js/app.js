@@ -41,6 +41,8 @@ const routes = [
     { path: '/', component: GamePlatform },
 ]
 
+// TODO: Add wildcard route for new 404 component.
+
 const router = new VueRouter({
     mode: 'history',
     routes

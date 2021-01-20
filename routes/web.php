@@ -23,6 +23,10 @@ Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
 
+Route::get('/{vue_capture?}', function () {
+    return view('layouts.master');
+})->where('vue_capture', '[\/\w\.-]*');
+
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
     return "Cache is cleared";
