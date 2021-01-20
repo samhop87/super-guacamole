@@ -7,7 +7,7 @@
             <div class="w-full container border-8" :class="borderColour">
                 <div class="flex flex-row justify-between items-center">
                 <div class="w-1/4">
-                    <img class="w-full" src="/images/assistant.jpg">
+                    <img class="w-full" src="/images/assistant_cropped.jpg">
                 </div>
                     <div class="w-3/4 ml-4">
                 <event :event="event" @triggerEvent="nextEvent"></event>
@@ -16,7 +16,7 @@
             </div>
             <div class="md:flex md:justify-around" v-if="event">
                 <div
-                    class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/4 my-2 p-3 border-4 rounded border-gray-400"
+                    class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/3 my-2 p-3 border-4 rounded border-gray-400"
                     v-for="choice in event.choices"
                     :key="choice.id"
                     @click="makeChoice(choice.outcome)"
@@ -52,6 +52,7 @@
                     decision: false
                 },
                 event: null,
+                image: null,
             }
         },
         computed: {
@@ -71,7 +72,6 @@
         },
         methods: {
             nextEvent() {
-                console.log(this.pastEvents)
                 axios.get('api/next-event',
                     { params: {
                         stability: this.game.stability.score,
@@ -79,6 +79,7 @@
                         pastEvents: JSON.stringify(this.game.pastEvents)
                     }}).then(({data}) => {
                     this.event = data.data
+                    // this.importImage()
                 }).then(() => {
                     this.$emit('remember-event', this.event.id)
                 }).catch(({response}) => {
@@ -89,6 +90,13 @@
                 this.loading.decision = true
                 this.$emit('apply-outcome', outcome)
                 this.loading.decision = false
+            },
+            importImage() {
+                axios.get('https://api.pexels.com/v1').then(({ data }) => {
+                    this.image = data.url
+                }).catch(({response}) => {
+                    console.log(response)
+                })
             }
         },
     }

@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div>
-            <h1>Stability</h1>
+        <div class="my-3">
+            <h1 class="my-2">Stability</h1>
             <value-bar :value="stability" :colour="stabilityVariant"></value-bar>
         </div>
-        <div>
-            <h1>Popularity</h1>
+        <div class="my-2">
+            <h1 class="my-2">Popularity</h1>
             <value-bar :value="popularity" :colour="popularityVariant"></value-bar>
         </div>
     </div>

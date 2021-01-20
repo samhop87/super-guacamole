@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-black">
 <div id="app">
     <main>
         @yield('content')

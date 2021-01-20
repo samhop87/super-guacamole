@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="w-full my-4 border-4">
+        <div class="w-full mb-4">
             <info-bar :game="game"></info-bar>
         </div>
-        <div class="h-4/6 flex flex-col justify-between">
+        <div class="h-4/6 flex flex-col justify-between font-readable">
             <event-area v-if="!show_outcome"
                         @apply-outcome="presentOutcome"
                         @remember-event="rememberEvent"
