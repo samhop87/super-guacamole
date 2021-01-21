@@ -19,12 +19,22 @@
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
     opacity: 0;
 }
 
 // IMPORTS (TO BE IMPORTED)
+@layer utilities {
+    @variants responsive {
+        .font-readable {
+            font-size: 11px;
+        }
 
-.font-readable {
-    font-size: 11px;
+        .font-mobile {
+            font-size: 9px;
+        }
+    }
 }
+

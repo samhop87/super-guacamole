@@ -1,6 +1,6 @@
 <template>
     <div class="w-full container border-8">
-        <div class="text-lg p-2">
+        <div class="font-mobile sm:font-readable md:font-lg p-2">
             {{ outcome.info }}
         </div>
 
@@ -12,7 +12,7 @@
             {{ popularityMessage }}
         </div>
 
-        <button class="font-bold p-2 my-4 border-8 bg-blue-400 hover:text-white" type="button" @click="proceed">This is the button to proceed</button>
+        <button class="font-bold p-2 my-4 border-8 bg-blue-400 hover:text-white" type="button" @click="proceed">Proceed</button>
     </div>
 </template>
 

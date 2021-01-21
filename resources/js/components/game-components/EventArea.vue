@@ -52,7 +52,6 @@
                     decision: false
                 },
                 event: null,
-                image: null,
             }
         },
         computed: {
@@ -79,7 +78,6 @@
                         pastEvents: JSON.stringify(this.game.pastEvents)
                     }}).then(({data}) => {
                     this.event = data.data
-                    // this.importImage()
                 }).then(() => {
                     this.$emit('remember-event', this.event.id)
                 }).catch(({response}) => {
@@ -90,14 +88,7 @@
                 this.loading.decision = true
                 this.$emit('apply-outcome', outcome)
                 this.loading.decision = false
-            },
-            importImage() {
-                axios.get('https://api.pexels.com/v1').then(({ data }) => {
-                    this.image = data.url
-                }).catch(({response}) => {
-                    console.log(response)
-                })
             }
-        },
+        }
     }
 </script>

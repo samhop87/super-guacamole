@@ -4,10 +4,10 @@
             <progress-bars :stability="game.stability.score" :popularity="game.popularity.score"/>
         </div>
         <div class="h-1/6 w-1/5 flex flex-col">
-            <p class="my-1 text-xs">Your Assistant:</p>
+            <p class="my-1 font-mobile md:font-readable">Your Assistant:</p>
             <img class="w-3/4" src="/images/assistant_cropped.jpg">
         </div>
-        <div class="h-1/6 p-2 w-1/4 flex justify-end self-center">
+        <div class="h-1/6 p-2 w-1/4 flex justify-end self-center font-mobile sm:font-readable">
             <month-counter :game="game"></month-counter>
         </div>
     </div>

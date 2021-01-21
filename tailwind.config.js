@@ -3,8 +3,14 @@ module.exports = {
         fontFamily: {
             'display': ['"Press Start 2P"', 'cursive']
         },
-        extend: {},
+        extend: {
+            height: theme => ({
+                "1/7": "14%",
+                "1/8": "12.5%",
+                "1/9": "11%",
+            }),
+        },
     },
-    variants: {},
+    variants: { display: ["responsive", "hover", "focus"] },
     plugins: [],
 }
