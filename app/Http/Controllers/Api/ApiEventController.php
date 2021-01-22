@@ -65,10 +65,11 @@ class ApiEventController extends Controller
 
         DB::transaction(function () use ($event) {
             $newEvent = Event::firstOrCreate([
-                'name' => $event->name,
-                'type' => $event->type,
-                'detail' => $event->detail,
-                'severity' => $event->severity
+                'name'              => $event->name,
+                'keyword_for_image' => $event->keyword_for_image,
+                'type'              => $event->type,
+                'detail'            => $event->detail,
+                'severity'          => $event->severity
             ]);
 
             foreach ($event->decision as $key => $decision) {

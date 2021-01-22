@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-//         $schedule->command('event:attach-image')->dailyAt('05:00');
+         $schedule->command('event:attach-image')->dailyAt('05:00');
     }
 
     /**

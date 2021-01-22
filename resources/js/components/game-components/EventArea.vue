@@ -4,12 +4,12 @@
             <spinner :colour="borderColour"></spinner>
         </div>
         <div v-else-if="!loading.decision">
-            <div class="w-full container border-8" :class="borderColour">
+            <div class="w-full sm:container border-8" :class="borderColour">
                 <div class="flex flex-row justify-between items-center">
-                <div class="w-1/4">
-                    <img class="w-full" src="/images/assistant_cropped.jpg">
+                <div class="w-1/3 sm:w-1/4">
+                    <img class="w-full" :src="availableImage">
                 </div>
-                    <div class="w-3/4 ml-4">
+                    <div class="w-2/3 sm:w-3/4 ml-4">
                 <event :event="event" @triggerEvent="nextEvent"></event>
                     </div>
                 </div>
@@ -61,6 +61,9 @@
                 // border-green-500
                 // border-blue-400
                 // border-pink-400
+            },
+            availableImage() {
+                return this.event ? this.event.image : 'images/assistant_cropped.jpg'
             }
         },
         mounted() {
@@ -78,6 +81,7 @@
                         pastEvents: JSON.stringify(this.game.pastEvents)
                     }}).then(({data}) => {
                     this.event = data.data
+                    console.log(this.event)
                 }).then(() => {
                     this.$emit('remember-event', this.event.id)
                 }).catch(({response}) => {

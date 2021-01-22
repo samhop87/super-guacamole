@@ -5,6 +5,10 @@
         </div>
 
         <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
+            <input class="w-full" type="text" placeholder="keyword" v-model="event_details.keyword_for_image">
+        </div>
+
+        <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
             <input class="w-full" type="number" placeholder="severity" min="1" max="5" v-model="event_details.severity">
         </div>
 
@@ -97,6 +101,7 @@
                 },
                 event_details: {
                     name: null,
+                    keyword_for_image: null,
                     type: null,
                     detail: null,
                     severity: 0,

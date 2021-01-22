@@ -2,8 +2,9 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Event;
+use GuzzleHttp\Client;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Http;
 
 class AttachEventImage extends Command
 {
@@ -38,13 +39,31 @@ class AttachEventImage extends Command
      */
     public function handle()
     {
-//       $imageCall = Http::withHeaders([
-//            'accept' => 'application/json'
-//        ])
-//            ->withToken(env('PEXELS_API_KEY'))
-//            ->get('https://api.pexels.com/v1')
-//            ->json();
-//
-//       dd($imageCall);
+        $eventAwaitingImage = Event::whereNull('image_url')->get();
+
+        foreach($eventAwaitingImage as $event) {
+            $client = new Client();
+            $query = $event->keyword_for_image ? strtolower($event->keyword_for_image) : strtok(strtolower($event->name), " ");
+            $url = "https://api.pexels.com/v1/search?query=" . $query;
+
+            $params = [
+                'per_page' => 1
+            ];
+
+            $headers = [
+                'Authorization' => env('PEXELS_API_KEY')
+            ];
+
+            $response = $client->request('GET', $url, [
+                'json' => $params,
+                'headers' => $headers,
+                'verify'  => false,
+            ]);
+
+            $responseBody = json_decode($response->getBody());
+
+            $event->image_url = $responseBody->photos[0]->src->original;
+            $event->save();
+        }
     }
 }
