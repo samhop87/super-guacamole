@@ -60,9 +60,10 @@ class AttachEventImage extends Command
                 'verify'  => false,
             ]);
 
+            // TODO: Handle errors properly
             $responseBody = json_decode($response->getBody());
 
-            $event->image_url = $responseBody->photos[0]->src->original;
+            $event->image_url = $responseBody && $responseBody->photos[0] ? $responseBody->photos[0]->src->original : null;
             $event->save();
         }
     }

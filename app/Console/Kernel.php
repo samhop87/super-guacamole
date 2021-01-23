@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\AttachEventImage::class
+        Commands\AttachEventImage::class,
+        Commands\TestCommand::class
     ];
 
     /**

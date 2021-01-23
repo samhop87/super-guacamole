@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/admin-components/Index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/partials/NotFound.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin-components/components/Create.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,12 +158,13 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\partials" />
-      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\app\Http\Controllers\Api" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\admin-components\components" />
+      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\partials" />
+      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\app\Http\Controllers\Api" />
     </key>
   </component>
   <component name="RunManager">
@@ -199,7 +208,10 @@
       <workItem from="1611158512058" duration="227000" />
       <workItem from="1611158964126" duration="12790000" />
       <workItem from="1611260445114" duration="3198000" />
-      <workItem from="1611345215066" duration="4348000" />
+      <workItem from="1611345215066" duration="4782000" />
+      <workItem from="1611350018304" duration="26000" />
+      <workItem from="1611409744134" duration="1358000" />
+      <workItem from="1611430146474" duration="9090000" />
     </task>
     <servers />
   </component>
@@ -217,10 +229,15 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1609423488929">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="510" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1611433933933">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609423488929" />
+    <state x="510" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1611433933933" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611433905218">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1611433905218" />
     <state x="1920" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1609253672874">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -233,18 +250,19 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611175073359" />
-    <state x="2421" y="110" width="918" height="820" key="find.popup" timestamp="1610099336764">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="334" y="72" width="612" height="536" key="find.popup" timestamp="1611436175751">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2421" y="110" width="918" height="820" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610099336764" />
-    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1609533423008" />
+    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1611436175751" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1609583044612">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609583044612" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611262300736">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1611435089656">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611262300736" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611435089656" />
   </component>
 </project>

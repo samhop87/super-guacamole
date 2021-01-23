@@ -22,5 +22,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/next-event', 'Api\ApiEventController@index');
 
 // Admin Routes
-Route::post('/store-event', 'Api\ApiEventController@store')->name('event');
+Route::post('/store-event', 'AdminController@store');
 Route::get('/event-types', 'AdminController@getEvents');

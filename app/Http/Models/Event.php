@@ -29,7 +29,20 @@ class Event extends Model
     CONST POLITICAL_BIG     = "big politics";
     CONST CIVIL_UNREST      = "civil unrest";
 
+    // Severity measured - 1 is most severe, 5 is least.
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function choices() {
         return $this->hasMany(Choice::class);
+    }
+
+    /**
+     * @param $stability
+     * @return int
+     */
+    public static function calculateSeverity($stability) {
+        return (int) ceil($stability / 20);
     }
 }

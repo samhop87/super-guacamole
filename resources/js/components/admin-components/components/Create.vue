@@ -5,10 +5,12 @@
         </div>
 
         <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
+            <label>Keyword for image</label>
             <input class="w-full" type="text" placeholder="keyword" v-model="event_details.keyword_for_image">
         </div>
 
         <div class="my-2 p-3 border-4 rounded border-gray-400 bg-gray-200">
+            <label>Severity: 1 is worst</label>
             <input class="w-full" type="number" placeholder="severity" min="1" max="5" v-model="event_details.severity">
         </div>
 
@@ -87,7 +89,7 @@
                 Submit event
             </button>
         </div>
-        {{ this.postResponse }}
+        <p class="text-yellow-400">{{ this.postResponse }}</p>
     </div>
 </template>
 
@@ -151,9 +153,9 @@
             },
             submit() {
                 axios.post('/api/store-event', this.event_details).then(({data}) => {
-                    this.postResponse = data.message
+                    this.$emit('submitted', data.message)
                 }).catch(({ response }) => {
-                    console.log(response)
+                    this.postResponse = response.statusText
                 })
             }
         }
