@@ -23,6 +23,11 @@ class ApiEventController extends Controller
             $event = Event::whereNotNull('name')->first();
         }
 
+        // Fallback
+        if (!$event) {
+            $event = Event::whereNotNull('name')->first();
+        }
+
         return new EventResource($event);
     }
 }
