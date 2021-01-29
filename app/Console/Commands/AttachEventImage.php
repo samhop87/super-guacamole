@@ -35,13 +35,20 @@ class AttachEventImage extends Command
     /**
      * Execute the console command.
      *
-     * @return int
+     * @return int | void
      */
     public function handle()
     {
-        $eventAwaitingImage = Event::whereNull('image_url')->get();
+        $this->info('Welcome to the event image generator command');
+        $this->info('Retrieving events without images...');
+        $eventAwaitingImages = Event::whereNull('image_url')->get();
 
-        foreach($eventAwaitingImage as $event) {
+        if (!$eventAwaitingImages) {
+            $this->info('All valid events have images already');
+            return;
+        }
+
+        foreach($eventAwaitingImages as $event) {
             $client = new Client();
             $query = $event->keyword_for_image ? strtolower($event->keyword_for_image) : strtok(strtolower($event->name), " ");
             $url = "https://api.pexels.com/v1/search?query=" . $query;
@@ -63,7 +70,7 @@ class AttachEventImage extends Command
             // TODO: Handle errors properly
             $responseBody = json_decode($response->getBody());
 
-            $event->image_url = $responseBody && $responseBody->photos[0] ? $responseBody->photos[0]->src->original : null;
+            $event->image_url = $responseBody && isset($responseBody->photos[0]) ? $responseBody->photos[0]->src->original : null;
             $event->save();
         }
     }

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +196,9 @@
       <workItem from="1611345215066" duration="4782000" />
       <workItem from="1611350018304" duration="26000" />
       <workItem from="1611409744134" duration="1358000" />
-      <workItem from="1611430146474" duration="9944000" />
+      <workItem from="1611430146474" duration="10557000" />
+      <workItem from="1611563588563" duration="839000" />
+      <workItem from="1611929457693" duration="505000" />
     </task>
     <servers />
   </component>

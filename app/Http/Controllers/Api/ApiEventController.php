@@ -15,6 +15,12 @@ class ApiEventController extends Controller
 
         $severity = Event::calculateSeverity($stability);
 
+        // This needs to work differently.
+        // If the event is not found, then move to the next level of severity.
+        // If still not found, move up a level of severity.
+        // If still not found, return any event.
+        // If nothing found, return game ended screen.
+
         if (!empty($pastEvents)) {
             $event = Event::where('severity', $severity)
                 ->whereNotIn('id', $pastEvents)
