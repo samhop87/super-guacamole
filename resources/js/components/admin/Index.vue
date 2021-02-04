@@ -11,7 +11,7 @@
 
 <script>
     import Create from "./components/Create";
-    import Spinner from "../partials/Spinner";
+    import Spinner from "../game/partials/Spinner";
 
     export default {
         data() {

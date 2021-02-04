@@ -4,7 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import GamePlatform from "./components/GamePlatform"
+import GamePlatform from "./components/game/components/GamePlatform"
+import Start from "./components/game/components/Start"
 
 require('./bootstrap');
 
@@ -31,12 +32,13 @@ Vue.use(VueRouter)
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('game-base', require('./components/Base.vue').default)
-Vue.component('events-manager', require('./components/admin-components/Index').default)
+Vue.component('game-base', require('./components/game/Base.vue').default)
+Vue.component('events-manager', require('./components/admin/Index').default)
 Vue.component('multiselect', Multiselect)
 
 const routes = [
-    { path: '/', component: GamePlatform }
+    { path: '/', component: Start},
+    { path: '/game', component: GamePlatform}
 ]
 
 // TODO: Add wildcard route for new 404 component.

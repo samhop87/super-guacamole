@@ -1,7 +1,11 @@
 <template>
     <div>
         <div class="w-full mb-4">
-            <info-bar :game="game"></info-bar>
+                <div class="flex flex-row font-display justify-between container">
+                    <div class="h-1/6 p-2 w-full">
+                        <progress-bars :health="game.health.score" :luck="game.luck.score"/>
+                    </div>
+                </div>
         </div>
         <div class="h-4/6 flex flex-col justify-between font-readable">
             <event-area v-if="!show_outcome"
@@ -19,14 +23,14 @@
 </template>
 
 <script>
-    import EventArea from "./game-components/EventArea"
-    import Outcome from './partials/Outcome'
-    import InfoBar from "./game-components/InfoBar";
+    import EventArea from "./EventArea"
+    import Outcome from '../partials/Outcome'
+    import ProgressBars from '../partials/Details'
 
     export default {
         components: {
             EventArea,
-            InfoBar,
+            ProgressBars,
             Outcome
         },
         props: {},
@@ -37,11 +41,11 @@
                 game: {
                     month: 'January',
                     pastEvents: [],
-                    popularity: {
+                    luck: {
                         score: 50,
                         difference: 0
                     },
-                    stability: {
+                    health: {
                         score: 50,
                         difference: 0
                     },
@@ -57,18 +61,18 @@
             presentOutcome(outcome) {
                 if (outcome) {
                     this.outcome = outcome
-                    this.game.popularity.difference = outcome.popularity_effect
-                    this.game.stability.difference  = outcome.stability_effect
+                    this.game.luck.difference = outcome.luck_effect
+                    this.game.health.difference  = outcome.health_effect
 
-                    this.game.popularity.score += outcome.popularity_effect
-                    this.game.stability.score  += outcome.stability_effect
+                    this.game.luck.score += outcome.luck_effect
+                    this.game.health.score  += outcome.health_effect
 
-                    if (this.game.popularity.score < 0) {
-                        this.game.popularity.score = 0
+                    if (this.game.luck.score < 0) {
+                        this.game.luck.score = 0
                     }
 
-                    if (this.game.stability.score < 0) {
-                        this.game.stability.score = 0
+                    if (this.game.health.score < 0) {
+                        this.game.health.score = 0
                     }
 
                 }

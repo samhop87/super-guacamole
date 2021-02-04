@@ -1,14 +1,13 @@
+## APOCALYPSE CONCEPT
+- Required:
+    - Fix game logic. The luck score will be decided at random at the start of the game.
+    - Events will need re-thinking. Not by severity? But by game progress. The further into
+    the game, the more deadly the enemies.
+    - Each choice will have two outcomes, not one. Only one outcome will be returned with the 
+    resource though, determined in the backend logic. The outcome will be determined by luck score.
+    
+# 
 
-## Stuff to do:
-- Required
-    - Add a datatable to display the current events.
-    - Once datatable created, redirect back to index on successful creation.
-    - Fix image loading to prevent default appearing first.
-     
-- Future
-    - Add months to game, firing the event call at random.
-    - Add date to event when returned, so it appears event happens on a given day
-    - Add two outcomes to each choice in table (use nested sets?)
-    - Build own status bars, that way we can remove bootstrap from styles and reduce filesize
-    - Fix tailwindcss purging issue.
-    - Make admin a part of the same vue instance / link to login auth route
+- Future:
+    - Change luck bar for a message about luck.
+    - Replace health bar with an image depicting health?

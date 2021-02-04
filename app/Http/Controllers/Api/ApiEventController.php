@@ -9,11 +9,11 @@ use App\Models\Event;
 class ApiEventController extends Controller
 {
     public function index() {
-        $stability  = request('stability');
-        $popularity = request('popularity');
+        $health  = request('health');
+        $luck = request('luck');
         $pastEvents = json_decode(request('pastEvents'));
 
-        $severity = Event::calculateSeverity($stability);
+        $severity = Event::calculateSeverity($luck);
 
         // This needs to work differently.
         // If the event is not found, then move to the next level of severity.

@@ -5,11 +5,11 @@
         </div>
 
         <div class="font-bold p-2">
-            {{ stabilityMessage }}
+            {{ healthMessage }}
         </div>
 
         <div class="font-bold p-2">
-            {{ popularityMessage }}
+            {{ luckMessage }}
         </div>
 
         <button class="font-bold p-2 my-4 border-8 bg-blue-400 hover:text-white" type="button" @click="proceed">Proceed</button>
@@ -29,18 +29,18 @@
             }
         },
         computed: {
-           stabilityMessage() {
-               if (this.game.stability.difference) {
-                   return this.game.stability.difference > 0 ? "The country's stability has improved" : "The country has become less stable."
+           healthMessage() {
+               if (this.game.health.difference) {
+                   return this.game.health.difference > 0 ? "The country's health has improved" : "The country has become less stable."
                } else {
-                   return "The country's stability is unchanged."
+                   return "Your health is unchanged."
                }
            },
-           popularityMessage() {
-               if (this.game.popularity.difference) {
-                   return this.game.popularity.difference > 0 ? "Your decision has made you more popular." : "People like you less."
+           luckMessage() {
+               if (this.game.luck.difference) {
+                   return this.game.luck.difference > 0 ? "Your decision has made you more popular." : "People like you less."
                } else {
-                   return "Your popularity is unaffected."
+                   return "Your luck is unaffected."
                }
            }
         },

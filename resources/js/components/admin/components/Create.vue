@@ -36,12 +36,12 @@
                 <label>Choice positive outcome:</label>
                 <textarea v-model="event_details.decision.positive.outcome.text" class="w-full"></textarea>
                 <div>
-                    <label>Stability effect:</label>
-                    <input type="number" placeholder="stability effect" v-model="event_details.decision.positive.outcome.stability_effect">
+                    <label>Health effect:</label>
+                    <input type="number" placeholder="health effect" v-model="event_details.decision.positive.outcome.health_effect">
                 </div>
                 <div>
-                    <label>Popularity effect:</label>
-                    <input type="number" placeholder="popularity effect" v-model="event_details.decision.positive.outcome.popularity_effect">
+                    <label>Luck effect:</label>
+                    <input type="number" placeholder="luck effect" v-model="event_details.decision.positive.outcome.luck_effect">
                 </div>
             </div>
         </div>
@@ -55,12 +55,12 @@
                 <label>Choice neutral outcome:</label>
                 <textarea v-model="event_details.decision.neutral.outcome.text" class="w-full"></textarea>
                 <div>
-                    <label>Stability effect:</label>
-                    <input type="number" placeholder="stability effect" v-model="event_details.decision.neutral.outcome.stability_effect">
+                    <label>Health effect:</label>
+                    <input type="number" placeholder="health effect" v-model="event_details.decision.neutral.outcome.health_effect">
                 </div>
                 <div>
-                    <label>Popularity effect:</label>
-                    <input type="number" placeholder="popularity effect" v-model="event_details.decision.neutral.outcome.popularity_effect">
+                    <label>Luck effect:</label>
+                    <input type="number" placeholder="luck effect" v-model="event_details.decision.neutral.outcome.luck_effect">
                 </div>
             </div>
         </div>
@@ -74,12 +74,12 @@
                 <label>Choice negative outcome:</label>
                 <textarea v-model="event_details.decision.negative.outcome.text" class="w-full"></textarea>
                 <div>
-                    <label>Stability effect:</label>
-                    <input type="number" placeholder="stability effect" v-model="event_details.decision.negative.outcome.stability_effect">
+                    <label>Health effect:</label>
+                    <input type="number" placeholder="health effect" v-model="event_details.decision.negative.outcome.health_effect">
                 </div>
                 <div>
-                    <label>popularity effect:</label>
-                    <input type="number" placeholder="popularity effect" v-model="event_details.decision.negative.outcome.popularity_effect">
+                    <label>luck effect:</label>
+                    <input type="number" placeholder="luck effect" v-model="event_details.decision.negative.outcome.luck_effect">
                 </div>
             </div>
         </div>
@@ -112,24 +112,24 @@
                             choice: null,
                             outcome: {
                                 text: null,
-                                stability_effect: 0,
-                                popularity_effect: 0
+                                health_effect: 0,
+                                luck_effect: 0
                             }
                         },
                         neutral: {
                             choice: null,
                             outcome: {
                                 text: null,
-                                stability_effect: 0,
-                                popularity_effect: 0
+                                health_effect: 0,
+                                luck_effect: 0
                             }
                         },
                         negative: {
                             choice: null,
                             outcome: {
                                 text: null,
-                                stability_effect: 0,
-                                popularity_effect: 0
+                                health_effect: 0,
+                                luck_effect: 0
                             }
                         }
                     },

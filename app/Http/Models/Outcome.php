@@ -19,7 +19,7 @@ class Outcome extends Model
      * @var array
      */
     protected $fillable = [
-        'event_choice_id', 'stability_effect', 'popularity_effect', 'info'
+        'event_choice_id', 'health_effect', 'luck_effect', 'info'
     ];
 
     /**

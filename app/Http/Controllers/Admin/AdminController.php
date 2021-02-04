@@ -37,8 +37,8 @@ class AdminController extends Controller
 
                 Outcome::firstOrCreate([
                     'event_choice_id' => $choice->id,
-                    'stability_effect' => $decision['outcome']['stability_effect'],
-                    'popularity_effect' => $decision['outcome']['popularity_effect'],
+                    'health_effect' => $decision['outcome']['health_effect'],
+                    'luck_effect' => $decision['outcome']['luck_effect'],
                     'info' => $decision['outcome']['text']
                 ]);
             }

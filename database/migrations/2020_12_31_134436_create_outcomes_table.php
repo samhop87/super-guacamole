@@ -16,8 +16,8 @@ class CreateOutcomesTable extends Migration
         Schema::create('outcomes', function (Blueprint $table) {
             $table->id();
             $table->integer('event_choice_id');
-            $table->integer('stability_effect');
-            $table->integer('popularity_effect');
+            $table->integer('health_effect');
+            $table->integer('luck_effect');
             $table->string('info');
             $table->timestamps();
         });

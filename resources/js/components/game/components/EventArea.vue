@@ -10,7 +10,7 @@
                     <img class="w-full" :src="availableImage">
                 </div>
                     <div class="w-2/3 sm:w-3/4 ml-4">
-                <event :event="event" @triggerEvent="nextEvent"></event>
+                <event :event="event"></event>
                     </div>
                 </div>
             </div>
@@ -63,21 +63,18 @@
                 // border-pink-400
             },
             availableImage() {
-                return this.event ? this.event.image : 'images/assistant_cropped.jpg'
+                return this.event ? this.event.image : 'images/asteroid.jpg'
             }
         },
         mounted() {
-            // This will not be in mounted later
-            // The eventarea component manages the flow of the game, makes the api calls.
-            // It provides the details to the event component, which is just a vehicle to show the data.
             this.nextEvent()
         },
         methods: {
             nextEvent() {
                 axios.get('api/next-event',
                     { params: {
-                        stability: this.game.stability.score,
-                        popularity: this.game.popularity.score,
+                        health: this.game.health.score,
+                        luck: this.game.luck.score,
                         pastEvents: JSON.stringify(this.game.pastEvents)
                     }}).then(({data}) => {
                     this.event = data.data

@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/game/components/Start.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/OutcomeResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/OutcomeResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_134436_create_outcomes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_134436_create_outcomes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/Base.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/GamePlatform.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/GamePlatform.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/components/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/components/Create.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game-components/InfoBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Details.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Details.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Event.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Event.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/MonthCounter.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/NotFound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Outcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Outcome.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Spinner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Spinner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/ValueBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/ValueBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,13 +166,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\public\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\game\components" />
+      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\game" />
       <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\admin-components\components" />
       <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\resources\js\components\partials" />
       <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\app\Http\Controllers\Api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\webroot\netdev.tough-at-the-top.co.uk\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -198,7 +223,9 @@
       <workItem from="1611409744134" duration="1358000" />
       <workItem from="1611430146474" duration="10557000" />
       <workItem from="1611563588563" duration="839000" />
-      <workItem from="1611929457693" duration="505000" />
+      <workItem from="1611929457693" duration="1290000" />
+      <workItem from="1612170240461" duration="246000" />
+      <workItem from="1612468335622" duration="4590000" />
     </task>
     <servers />
   </component>
@@ -237,19 +264,19 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611175073359" />
-    <state x="334" y="72" width="612" height="536" key="find.popup" timestamp="1611436175751">
+    <state x="334" y="72" width="612" height="536" key="find.popup" timestamp="1612470660221">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2421" y="110" width="918" height="820" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610099336764" />
-    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1611436175751" />
+    <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1612470660221" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1609583044612">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609583044612" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1611435089656">
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1612470612627">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611262300736" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611435089656" />
+    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1612470612627" />
   </component>
 </project>

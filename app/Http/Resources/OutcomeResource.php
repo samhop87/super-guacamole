@@ -17,10 +17,10 @@ class OutcomeResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'event_choice_id'   => $this->event_choice_id,
-            'stability_effect'  => $this->stability_effect,
-            'popularity_effect' => $this->popularity_effect,
-            'info'              => $this->info,
+            'event_choice_id' => $this->event_choice_id,
+            'health_effect'   => $this->health_effect,
+            'luck_effect'     => $this->luck_effect,
+            'info'            => $this->info,
         ];
     }
 }

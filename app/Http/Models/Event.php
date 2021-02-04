@@ -39,10 +39,10 @@ class Event extends Model
     }
 
     /**
-     * @param $stability
+     * @param $luck
      * @return int
      */
-    public static function calculateSeverity($stability) {
-        return (int) ceil($stability / 20);
+    public static function calculateSeverity($luck) {
+        return (int) ceil($luck / 20);
     }
 }
