@@ -5,7 +5,7 @@
     the game, the more deadly the enemies. Some kind of group
     - Each choice will have two outcomes, not one. Only one outcome will be returned with the 
     resource though, determined in the backend logic. The outcome will be determined by luck score.
-    
+    - Fix routes.
 # 
 
 - Future:

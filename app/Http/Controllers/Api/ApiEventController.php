@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\EndResource;
 use App\Http\Resources\EventResource;
 use App\Models\Event;
 
@@ -13,25 +14,15 @@ class ApiEventController extends Controller
         $luck = request('luck');
         $pastEvents = json_decode(request('pastEvents'));
 
-        $severity = Event::calculateSeverity($luck);
+        // TODO: Rework severity functionality for apocalypse mode.
+//        $severity = Event::calculateSeverity($luck);
 
-        // This needs to work differently.
-        // If the event is not found, then move to the next level of severity.
-        // If still not found, move up a level of severity.
-        // If still not found, return any event.
-        // If nothing found, return game ended screen.
+        // Retrieve event from remaining available events (or fire first event)
+        $event = !empty($pastEvents) ? Event::whereNotIn('id', $pastEvents)->first() : Event::whereNotNull('name')->first();
 
-        if (!empty($pastEvents)) {
-            $event = Event::where('severity', $severity)
-                ->whereNotIn('id', $pastEvents)
-                ->first();
-        } else {
-            $event = Event::whereNotNull('name')->first();
-        }
-
-        // Fallback
-        if (!$event) {
-            $event = Event::whereNotNull('name')->first();
+        // If all events have been chosen or health is zero, end game.
+        if (!$event || !$health) {
+            return new EndResource($pastEvents);
         }
 
         return new EventResource($event);

@@ -1,12 +1,12 @@
 <template>
-    <div class="flex flex-row">
+    <div class="flex flex-row font-mobile sm:font-readable">
         <div class="m-3 w-2/5">
-            <h1 class="font-mobile sm:font-readable my-2">Health</h1>
-            <value-bar :value="health" :colour="healthVariant"></value-bar>
+            <h1 class="my-2">Health:</h1>
+            <h1 class="my-2 text-2xl">{{ health }}/100</h1>
         </div>
         <div class="m-3 w-2/5">
-            <h1 class="font-mobile sm:font-readable my-2">Luck</h1>
-            <value-bar :value="luck" :colour="luckVariant"></value-bar>
+            <h1 class="my-2">Luck Assessment:</h1>
+            <h1 class="my-2">{{ luckMessage }}</h1>
         </div>
     </div>
 </template>
@@ -43,18 +43,20 @@
                         return 'dark'
                 }
             },
-            luckVariant() {
+            luckMessage() {
                 switch (true) {
                     case this.luck < 10:
-                        return 'dark'
+                        return 'You are terribly unlucky.'
                     case this.luck > 10 && this.luck < 35:
-                        return 'danger'
+                        return 'Your luck is pretty bad.'
                     case this.luck > 35 && this.luck < 55:
-                        return 'warning'
-                    case this.luck > 55:
-                        return 'success'
+                        return 'Let\'s just say you could be luckier.'
+                    case this.luck > 55 && this.luck < 70:
+                        return 'You have better than average luck.'
+                    case this.luck > 70:
+                        return 'Did you eat a rabbit\'s foot? Your luck is amazing.'
                     default:
-                        return 'dark'
+                        return 'No luck.'
                 }
             }
         }
