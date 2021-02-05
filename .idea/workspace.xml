@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/game/components/Start.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/OutcomeResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/OutcomeResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_31_134436_create_outcomes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_31_134436_create_outcomes_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/Base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/GamePlatform.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/GamePlatform.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/admin-components/components/Create.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/admin/components/Create.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game-components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game-components/InfoBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Details.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Details.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Event.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Event.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/MonthCounter.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/NotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/NotFound.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Outcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Outcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/Spinner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Spinner.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/partials/ValueBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/ValueBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/Start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/Start.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +204,8 @@
       <workItem from="1611563588563" duration="839000" />
       <workItem from="1611929457693" duration="1290000" />
       <workItem from="1612170240461" duration="246000" />
-      <workItem from="1612468335622" duration="4590000" />
+      <workItem from="1612468335622" duration="4721000" />
+      <workItem from="1612523235618" duration="1668000" />
     </task>
     <servers />
   </component>
