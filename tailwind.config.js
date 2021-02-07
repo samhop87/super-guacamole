@@ -1,4 +1,11 @@
 module.exports = {
+    // purge: {
+    //     enabled: true,
+    //     content: [
+    //         './resources/**/**/*.vue',
+    //         './public/*.php',
+    //     ]
+    // },
     theme: {
         fontFamily: {
             'display': ['"Press Start 2P"', 'cursive']

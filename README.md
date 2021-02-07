@@ -9,8 +9,5 @@
 # 
 
 - Future:
-    - Change luck bar for a message about luck.
-    - Replace health bar with an image depicting health?
-    - Once this is done we can remove bootstrap and bootstrap vue.
     - Fix tailwind css purge
     - Make admin a part of the same vue instance / link to login auth route

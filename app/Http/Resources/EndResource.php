@@ -17,15 +17,12 @@ class EndResource extends JsonResource
      */
     public function toArray($request)
     {
-        dd(Event::whereIn('id', json_decode($request->pastEvents))->get()->toArray());
         return [
             'name'     => 'THE END',
             'type'     => 'game_over',
-           'details'  => Event::whereIn('id', json_decode($request->pastEvents))->get()
-
-//               $this->resource->choices->map(function ($choice) {
-//                return new OutcomeResource($choice->outcome);
-//            })
+            'details'  => Event::whereIn('id', json_decode($request->pastEvents))->get()->map(function ($ind) {
+                return $ind->name;
+            })
         ];
     }
 }

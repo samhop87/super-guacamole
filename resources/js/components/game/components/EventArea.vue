@@ -5,7 +5,7 @@
         </div>
         <div v-else-if="!loading.decision">
             <div class="w-full sm:container border-8" :class="borderColour">
-                <div class="flex flex-row justify-between items-center">
+                <div v-if="event && availableImage" class="flex flex-row justify-between items-center">
                 <div class="w-1/3 sm:w-1/4">
                     <img class="w-full" :src="availableImage">
                 </div>
@@ -67,7 +67,11 @@
             }
         },
         mounted() {
-            this.nextEvent()
+            if (this.game.health.score > 0) {
+                this.nextEvent()
+            } else {
+                this.endGame()
+            }
         },
         methods: {
             nextEvent() {
@@ -78,12 +82,17 @@
                         pastEvents: JSON.stringify(this.game.pastEvents)
                     }}).then(({data}) => {
                     this.event = data.data
-                    console.log(this.event)
+                    if (this.event.type === "game_over") {
+                        this.endGame()
+                    }
                 }).then(() => {
                     this.$emit('remember-event', this.event.id)
                 }).catch(({response}) => {
                     console.log(response)
                 })
+            },
+            endGame() {
+                this.$emit('end-game')
             },
             makeChoice(outcome) {
                 this.loading.decision = true

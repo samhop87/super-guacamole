@@ -1,23 +1,29 @@
 <template>
     <div>
-        <div class="w-full mb-4">
+        <div v-if="currentGame">
+            <div class="w-full mb-4">
                 <div class="flex flex-row font-display justify-between container">
                     <div class="h-1/6 p-2 w-full">
                         <progress-bars :health="game.health.score" :luck="game.luck.score"/>
                     </div>
                 </div>
+            </div>
+            <div class="h-4/6 flex flex-col justify-between font-readable">
+                <event-area v-if="!show_outcome"
+                            @apply-outcome="presentOutcome"
+                            @remember-event="rememberEvent"
+                            @end-game="endGame"
+                            :game="game"
+                />
+                <outcome v-else-if="show_outcome"
+                         @hide-outcome="presentOutcome"
+                         :game="game"
+                         :outcome="outcome"
+                />
+            </div>
         </div>
-        <div class="h-4/6 flex flex-col justify-between font-readable">
-            <event-area v-if="!show_outcome"
-                        @apply-outcome="presentOutcome"
-                        @remember-event="rememberEvent"
-                        :game="game"
-            />
-            <outcome v-else-if="show_outcome"
-                     @hide-outcome="presentOutcome"
-                     :game="game"
-                     :outcome="outcome"
-            />
+        <div v-if="!currentGame">
+            <end></end>
         </div>
     </div>
 </template>
@@ -26,16 +32,19 @@
     import EventArea from "./EventArea"
     import Outcome from '../partials/Outcome'
     import ProgressBars from '../partials/Details'
+    import End from './End'
 
     export default {
         components: {
             EventArea,
             ProgressBars,
-            Outcome
+            Outcome,
+            End
         },
         props: {},
         data() {
             return {
+                currentGame: true,
                 outcome: null,
                 show_outcome: false,
                 game: {
@@ -58,14 +67,17 @@
             // All lifecycle hooks
         },
         methods: {
+            endGame() {
+                this.currentGame = false
+            },
             presentOutcome(outcome) {
                 if (outcome) {
                     this.outcome = outcome
                     this.game.luck.difference = outcome.luck_effect
-                    this.game.health.difference  = outcome.health_effect
+                    this.game.health.difference = outcome.health_effect
 
                     this.game.luck.score += outcome.luck_effect
-                    this.game.health.score  += outcome.health_effect
+                    this.game.health.score += outcome.health_effect
 
                     if (this.game.luck.score < 0) {
                         this.game.luck.score = 0
