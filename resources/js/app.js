@@ -10,16 +10,11 @@ import Start from "./components/game/components/Start"
 require('./bootstrap');
 
 window.Vue = require('vue');
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import VueRouter from 'vue-router'
 import Multiselect from "vue-multiselect";
 
 // Components
-
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
 Vue.use(VueRouter)
-
 
 /**
  * The following block of code may be used to automatically register your
