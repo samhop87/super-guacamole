@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row font-mobile sm:font-readable">
+    <div class="flex flex-row justify-around font-mobile sm:font-readable text-center">
         <div class="m-3 w-2/5">
             <h1 class="my-2">Health:</h1>
             <h1 class="my-2 text-2xl">{{ health }}/100</h1>

@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/Start.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/Start.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/Base.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/End.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/End.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/GamePlatform.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/GamePlatform.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/partials/Details.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Details.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/partials/Spinner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Spinner.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +217,9 @@
       <workItem from="1612727479506" duration="4588000" />
       <workItem from="1612773606777" duration="613000" />
       <workItem from="1612817545970" duration="714000" />
+      <workItem from="1612859557940" duration="602000" />
+      <workItem from="1612954729423" duration="574000" />
+      <workItem from="1612957863111" duration="4099000" />
     </task>
     <servers />
   </component>
@@ -250,10 +258,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611175073359" />
-    <state x="334" y="72" width="612" height="536" key="find.popup" timestamp="1612470660221">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2421" y="110" width="918" height="820" key="find.popup" timestamp="1612964662621">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2421" y="110" width="918" height="820" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1610099336764" />
+    <state x="2421" y="110" width="918" height="820" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612964662621" />
     <state x="334" y="72" width="612" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1612470660221" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1609583044612">
       <screen x="1920" y="0" width="1920" height="1040" />

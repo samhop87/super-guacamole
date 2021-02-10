@@ -13,7 +13,7 @@
     "devDependencies": {
         "@tailwindcss/postcss7-compat": "^2.0.2",
         "autoprefixer": "^9.8.6",
-        "axios": "^0.19",
+        "axios": "^0.21.1",
         "bootstrap": "^4.0.0",
         "cross-env": "^7.0",
         "jquery": "^3.2",
@@ -31,6 +31,7 @@
     "dependencies": {
         "bootstrap-vue": "^2.21.1",
         "vue-multiselect": "^2.1.6",
-        "vue-router": "^3.4.9"
+        "vue-router": "^3.4.9",
+        "vue-spinner": "^1.0.4"
     }
 }

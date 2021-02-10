@@ -1,11 +1,7 @@
 <template>
     <div>
         <div class="text-center d-flex justify-content-between">
-            <b-spinner
-                style="width: 3rem; height: 3rem;"
-                :variant="borderColour"
-                type="grow"
-            ></b-spinner>
+            <pulse-loader :loading="loading" :color="borderColour"></pulse-loader>
         </div>
     </div>
 </template>
@@ -13,6 +9,10 @@
 <script>
     export default {
         props: {
+            loading: {
+                type: Boolean,
+                default: false
+            },
           borderColour: {
               type: String,
               default: 'indigo'

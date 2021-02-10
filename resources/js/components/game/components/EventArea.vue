@@ -1,10 +1,10 @@
 <template>
     <div>
         <div v-if="loading.decision">
-            <spinner :colour="borderColour"></spinner>
+            <spinner :loading="loading.decision" :colour="borderColour"></spinner>
         </div>
         <div v-else-if="!loading.decision">
-            <div class="w-full sm:container border-8" :class="borderColour">
+            <div class="w-full sm:m-auto sm:container border-8" :class="borderColour">
                 <div v-if="event && availableImage" class="flex flex-row justify-between items-center">
                 <div class="w-1/3 sm:w-1/4">
                     <img class="w-full" :src="availableImage">
@@ -16,7 +16,7 @@
             </div>
             <div class="md:flex md:justify-around" v-if="event">
                 <div
-                    class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/3 my-2 p-3 border-4 rounded border-gray-400"
+                    class="cursor-pointer hover:border-blue-400 md:flex md:flex-row md:w-1/4 my-2 p-3 border-4 rounded border-gray-400"
                     v-for="choice in event.choices"
                     :key="choice.id"
                     @click="makeChoice(choice.outcome)"

@@ -12,6 +12,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 import VueRouter from 'vue-router'
 import Multiselect from "vue-multiselect";
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 
 // Components
 Vue.use(VueRouter)
@@ -30,6 +31,7 @@ Vue.use(VueRouter)
 Vue.component('game-base', require('./components/game/Base.vue').default)
 Vue.component('events-manager', require('./components/admin/Index').default)
 Vue.component('multiselect', Multiselect)
+Vue.component('pulse-loader', PulseLoader);
 
 const routes = [
     { path: '/', component: Start},

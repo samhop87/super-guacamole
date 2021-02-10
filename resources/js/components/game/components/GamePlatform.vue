@@ -2,8 +2,8 @@
     <div>
         <div v-if="currentGame">
             <div class="w-full mb-4">
-                <div class="flex flex-row font-display justify-between container">
-                    <div class="h-1/6 p-2 w-full">
+                <div class="flex flex-row font-display justify-center">
+                    <div class="h-1/6 p-2">
                         <progress-bars :health="game.health.score" :luck="game.luck.score"/>
                     </div>
                 </div>
