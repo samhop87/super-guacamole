@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\EndResource;
 use App\Http\Resources\EventResource;
-use App\Models\Event;
+use App\Http\Models\Event;
 
 class ApiEventController extends Controller
 {

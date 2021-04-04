@@ -31,14 +31,14 @@
         computed: {
            healthMessage() {
                if (this.game.health.difference) {
-                   return this.game.health.difference > 0 ? "The country's health has improved" : "The country has become less stable."
+                   return this.game.health.difference > 0 ? "Your health is boosted" : "You've lost health."
                } else {
                    return "Your health is unchanged."
                }
            },
            luckMessage() {
                if (this.game.luck.difference) {
-                   return this.game.luck.difference > 0 ? "Your decision has made you more popular." : "People like you less."
+                   return this.game.luck.difference > 0 ? "Your luck is improving." : "Your luck appears to have gotten worse."
                } else {
                    return "Your luck is unaffected."
                }

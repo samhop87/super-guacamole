@@ -63,7 +63,7 @@
                 // border-pink-400
             },
             availableImage() {
-                return this.event ? this.event.image : 'images/asteroid.jpg'
+                return this.event && this.event.image ? this.event.image : 'images/asteroid.jpg'
             }
         },
         mounted() {
@@ -92,7 +92,9 @@
                 })
             },
             endGame() {
-                this.$emit('end-game')
+                // Todo: this isn't working
+                console.log(this.event)
+                this.$emit('end-game', this.event)
             },
             makeChoice(outcome) {
                 this.loading.decision = true

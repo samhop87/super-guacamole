@@ -8,7 +8,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-4/6 flex flex-col justify-between font-readable">
+            <div class="h-4/6 flex flex-col justify-between font-readable items-center">
                 <event-area v-if="!show_outcome"
                             @apply-outcome="presentOutcome"
                             @remember-event="rememberEvent"
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div v-if="!currentGame">
-            <end></end>
+            <end :details="game.finalDetails"></end>
         </div>
     </div>
 </template>
@@ -48,6 +48,7 @@
                 outcome: null,
                 show_outcome: false,
                 game: {
+                    finalDetails: null,
                     month: 'January',
                     pastEvents: [],
                     luck: {
@@ -67,8 +68,10 @@
             // All lifecycle hooks
         },
         methods: {
-            endGame() {
+            endGame(e) {
+                console.log(e)
                 this.currentGame = false
+                this.finalDetails = e
             },
             presentOutcome(outcome) {
                 if (outcome) {

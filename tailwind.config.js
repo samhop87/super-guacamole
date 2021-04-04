@@ -1,4 +1,10 @@
 module.exports = {
+    purge: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.vue',
+    ],
     theme: {
         fontFamily: {
             'display': ['"Press Start 2P"', 'cursive']

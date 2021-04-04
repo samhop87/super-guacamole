@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Choice;
-use App\Models\Event;
-use App\Models\Outcome;
+use App\Http\Controllers\Controller;
+use App\Http\Models\Choice;
+use App\Http\Models\Event;
+use App\Http\Models\Outcome;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -54,15 +55,17 @@ class AdminController extends Controller
      */
     public function getEvents()
     {
-        $eventTypes = [
-            Event::NATURAL_DISASTER,
-            Event::CIVIL_UNREST,
-            Event::PERSONAL_SCANDAL,
-            Event::POLITICAL_BIG,
-            Event::POLITICAL_SMALL,
-            Event::POLITICAL_SCANDAL
+        // Reformatting the event types to be stages.
+        // @todo: make this change part of the game flow, rather than the returned events
+        $eventStages = [
+            Event::FIRST_STEPS,
+            Event::EXPLORING,
+            Event::LEARNING,
+            Event::FIGHTING_FOR_SURVIVAL,
+            Event::GETTING_STRONGER,
+            Event::CONTINUING_TO_SURVIVE
         ];
 
-        return $eventTypes;
+        return $eventStages;
     }
 }

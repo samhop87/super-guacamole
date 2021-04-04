@@ -2,7 +2,7 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Event;
+use App\Http\Models\Event;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
@@ -17,6 +17,7 @@ class EndResource extends JsonResource
      */
     public function toArray($request)
     {
+        // @todo: think about how to change this to log high scores
         return [
             'name'     => 'THE END',
             'type'     => 'game_over',
