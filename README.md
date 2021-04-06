@@ -1,13 +1,20 @@
 ## APOCALYPSE CONCEPT
 - Required:
     - Fix game logic. The luck score will be decided at random at the start of the game.
-    - Events will need re-thinking. Not by severity? But by game progress. The further into
-    the game, the more deadly the enemies. Some kind of group
-    - Each choice will have two outcomes, not one. Only one outcome will be returned with the 
-    resource though, determined in the backend logic. The outcome will be determined by luck score.
-    - Fix routes.
+    - Luck will determine the outcome of each choice.
+    - Each choice will now have two outcomes, not one. And they will be supplied to the frontend in the resource, pre-determined.
+    - This will be done as a new method on the outcome model. It will receive the luck score, and calculate which outcome to
+    return. Maybe with a scoped relation or something?
+      - Add new outcomes to match all existing outcomes, change the relation to be hasMany
+    - Change login page styles, they currently don't work correctly.
 # 
 
 - Future:
-    - Fix tailwind css purge
     - Make admin a part of the same vue instance / link to login auth route
+    - If we remake the project, using inertia we can have the game be the default route and the admin be the auth login.
+
+## Setup and notes
+- heroku run php artisan (for commands)
+- remember that the db is linked with live by default
+- heroku git push master (for deployment)
+- app name is idiot-survival

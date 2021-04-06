@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_04_04_2021__09_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Choice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Choice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/Outcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/Outcome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EndResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EndResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/End.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/End.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/GamePlatform.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/GamePlatform.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/partials/Event.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Event.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/partials/Outcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/partials/Outcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiOutcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiOutcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/Base.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +230,7 @@
       <workItem from="1612954729423" duration="574000" />
       <workItem from="1612957863111" duration="4099000" />
       <workItem from="1616335049024" duration="1179000" />
-      <workItem from="1617526042987" duration="4471000" />
+      <workItem from="1617526042987" duration="11260000" />
     </task>
     <servers />
   </component>
