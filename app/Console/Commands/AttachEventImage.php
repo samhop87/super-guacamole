@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Event;
+use App\Http\Models\Event;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 

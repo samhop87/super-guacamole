@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiOutcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiOutcomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/game/Base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/Base.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +227,9 @@
       <workItem from="1612957863111" duration="4099000" />
       <workItem from="1616335049024" duration="1179000" />
       <workItem from="1617526042987" duration="11260000" />
+      <workItem from="1618318377022" duration="608000" />
+      <workItem from="1618387157958" duration="599000" />
+      <workItem from="1618411772769" duration="31000" />
     </task>
     <servers />
   </component>
@@ -257,5 +256,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
