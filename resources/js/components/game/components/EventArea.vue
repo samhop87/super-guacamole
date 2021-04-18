@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div v-if="loading.decision">
+        <div v-if="loading.event">
             <spinner :loading="loading.decision" :colour="borderColour"></spinner>
         </div>
-        <div v-else-if="!loading.decision">
+        <div v-else-if="!loading.event">
             <div class="w-full sm:m-auto sm:container border-8" :class="borderColour">
                 <div v-if="event && availableImage" class="flex flex-row justify-between items-center">
                 <div class="w-1/3 sm:w-1/4">
@@ -23,9 +23,6 @@
                 >
                     {{ choice.details }}
                 </div>
-            </div>
-            <div v-else>
-                <spinner></spinner>
             </div>
         </div>
     </div>
@@ -49,7 +46,8 @@
         data() {
             return {
                 loading: {
-                    decision: false
+                    decision: false,
+                    event: false
                 },
                 event: null,
             }
@@ -75,6 +73,7 @@
         },
         methods: {
             nextEvent() {
+                this.loading.event = true
                 axios.get('api/next-event',
                     { params: {
                         health: this.game.health.score,
@@ -85,6 +84,7 @@
                     if (this.event.type === "game_over") {
                         this.endGame()
                     }
+                    this.loading.event = false
                 }).then(() => {
                     this.$emit('remember-event', this.event.id)
                 }).catch(({response}) => {

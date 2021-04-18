@@ -14,7 +14,7 @@ class EventResource extends JsonResource
      *
      * @return array
      */
-    public function toArray($request)
+    public function toArray($request): array
     {
         return [
             'id'       => $this->id,
@@ -25,6 +25,7 @@ class EventResource extends JsonResource
             'severity' => $this->severity,
             'choices'  => $this->resource->choices,
             'outcomes' => $this->resource->choices->map(function ($choice) {
+                // This needs to change - but how to pass the luck score?
                 return new OutcomeResource($choice->outcome);
             })
         ];

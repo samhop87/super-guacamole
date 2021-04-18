@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b4db3e6-5c07-4e7e-92fd-476d0d40b7de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/netdev.tough-at-the-top.co.uk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/netdev.tough-at-the-top.co.uk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/AttachEventImage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiEventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EventResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/game/components/EventArea.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,6 +236,7 @@
       <workItem from="1618318377022" duration="608000" />
       <workItem from="1618387157958" duration="599000" />
       <workItem from="1618411772769" duration="31000" />
+      <workItem from="1618688662090" duration="3399000" />
     </task>
     <servers />
   </component>

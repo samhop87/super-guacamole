@@ -72,6 +72,8 @@ class AttachEventImage extends Command
 
             $event->image_url = $responseBody && isset($responseBody->photos[0]) ? $responseBody->photos[0]->src->original : null;
             $event->save();
+
+            $this->info('Attached new image for ' . $event->name);
         }
     }
 }

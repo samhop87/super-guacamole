@@ -15,7 +15,7 @@ class ApiEventController extends Controller
         $pastEvents = json_decode(request('pastEvents'));
 
         // TODO: Rework severity functionality for apocalypse mode.
-//        $severity = Event::calculateSeverity($luck);
+        // Luck will determine which outcome is returned with the event.
 
         // Retrieve event from remaining available events (or fire first event)
         $event = !empty($pastEvents) ? Event::whereNotIn('id', $pastEvents)->first() : Event::whereNotNull('name')->first();

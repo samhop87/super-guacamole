@@ -16,5 +16,5 @@
 ## Setup and notes
 - heroku run php artisan (for commands)
 - remember that the db is linked with live by default
-- heroku git push master (for deployment)
+- git push heroku master (for deployment)
 - app name is idiot-survival
